@@ -1,0 +1,71 @@
+
+<html>
+<head>
+    <title>Address Form</title>
+</head>
+
+<body>
+
+    <h2>Address Details</h2>
+
+    <form action="/address" method="post">
+
+        <button type="button">Use my current location</button>
+
+        <br><br>
+
+        <input type="text" name="name" placeholder="Name" required>
+
+        <input type="tel" name="mobile" placeholder="10-digit mobile number" maxlength="10" required>
+
+        <br><br>
+
+        <input type="text" name="pincode" placeholder="Pincode" required>
+
+        <input type="text" name="locality" placeholder="Locality" required>
+
+        <br><br>
+
+        <textarea name="address" rows="5" cols="55"
+        placeholder="Address (Area and Street)" required></textarea>
+
+        <br><br>
+
+        <input type="text" name="city" placeholder="City/District/Town">
+
+        <select name="state">
+            <option>--Select State--</option>
+            <option>Andhra Pradesh</option>
+            <option>Telangana</option>
+            <option>Tamil Nadu</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Maharashtra</option>
+        </select>
+
+        <br><br>
+
+        <input type="text" name="landmark" placeholder="Landmark (Optional)">
+
+        <input type="tel" name="alternate" placeholder="Alternate Phone (Optional)">
+
+        <br><br>
+
+        <label>Address Type</label>
+
+        <br>
+
+        <input type="radio" name="type" value="Home"> Home
+
+        <input type="radio" name="type" value="Work"> Work
+
+        <br><br>
+
+        <button type="submit">SAVE</button>
+
+        <button type="reset">CANCEL</button>
+
+    </form>
+
+</body>
+</html>
