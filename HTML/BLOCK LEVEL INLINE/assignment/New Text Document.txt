@@ -1,0 +1,6 @@
+#create 
+emp=101
+
+#Read
+
+print("emp")
