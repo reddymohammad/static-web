@@ -1,5 +1,3 @@
-# assignment of filter
-
 cars=[
  { "brand": "Maruti Suzuki", "model": "Swift", "price": 650000, "color": "Red" },
  { "brand": "Maruti Suzuki", "model": "Baleno", "price": 800000, "color": "Blue" },
@@ -24,20 +22,31 @@ cars=[
 ]
 
 
-
-
-
-
+#without filter
 
 new_cars=[]
 for car in cars:
-    car['avail']=True
-    new_cars.append(car)
+
+    if car['brand'] =="Maruti Suzuki":
+      new_cars.append(car)
 print(new_cars)
 
 
-def update_car(car):
-     car['avail']=True
-     return car
-map_obj=map(update_car,cars)
-new_cars=list(map_obj)
+
+# with filter
+
+
+def get_cars(car):
+   return car['brand']=="Maruti Suzuki"
+
+new_cars=list(filter(get_cars,cars))
+print(new_cars)
+
+#with filter lambda
+
+
+new_cars=list(filter(lambda car:car['brand']=="Maruti Suzuki",cars))
+print(new_cars)
+         
+
+
