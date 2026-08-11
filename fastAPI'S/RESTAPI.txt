@@ -1,0 +1,5 @@
+Usage: Fetch all users
+Rest API URL: https://jsonplaceholder.typicode.com/users
+Method Type: GET
+Required Fields: None 
+Access Type: Public

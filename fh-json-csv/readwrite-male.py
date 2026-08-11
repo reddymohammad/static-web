@@ -4,6 +4,7 @@ import csv
 fp1=open("users.csv","r")
 csv_reader=csv.reader(fp1)
 users=list(csv_reader)
+
 #how to exclude csv heaer
 users=users[1:]
 print(len(users))
