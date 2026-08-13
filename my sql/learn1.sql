@@ -108,6 +108,7 @@ INSERT INTO orders
 VALUES
 (1010,'Apple Mobile',3000,106,'Open'),
 (1011,'FitBit',400,106	,'Closed');
+(100)
 
 
 

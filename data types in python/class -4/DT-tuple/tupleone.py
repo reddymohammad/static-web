@@ -8,4 +8,4 @@ print(b)
 
 print(type(t1))   #tuple
 print(type(a))    #int
-print(type(b))    #tuple
+print(type(b))
