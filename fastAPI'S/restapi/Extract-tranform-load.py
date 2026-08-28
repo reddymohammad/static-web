@@ -33,7 +33,7 @@ fp1.close()
 import csv
 fp2=open('users.csv', 'w',newline='')
 csv_writer=csv.writer(fp2)
-csv_writer.writerow(['userid', 'username', 'location', 'company'])
+csv_writer.writerow(['userid', 'uname', 'email', 'city'])
 csv_writer.writerow(users_csv)
 print("new csv created successfully")
 fp2.close()
